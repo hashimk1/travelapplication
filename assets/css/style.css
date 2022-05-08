@@ -1,0 +1,588 @@
+/* ------------------------------------------ GENERAL CSS ------------------------------------------ */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+html body{
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+/* ------------------------------------------ RESPONSIVENESS CSS ------------------------------------------ */
+
+@media screen and (max-width: 767px) {
+    .navbar-toggler{
+        box-shadow: none !important;
+    }
+    form.d-flex{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .div-1{
+        order: 2;
+        margin-top: 20px;
+    }
+    .div-2{
+        order: 1;
+    }
+    .div-3{
+        order: 3;
+    }
+
+    .right-side{
+        margin-top: 20px;
+    }
+    .post{
+        min-width: 140%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .post{
+        min-width: 120%;
+    }
+    .left-side-bar ul li{
+        position: relative;
+        left: -20px;
+        font-size: 12px;
+    }
+    .right-side ul{
+        padding: 20px;
+        line-height: 40px;
+    }
+    .right-side ul li img{
+        width: 32px;
+        height: 32px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .post {
+        min-width: 180%;
+    }
+}
+
+
+/* --------------------------------------------- NAVBAR CSS ----------------------------------- */
+
+.navbar{
+    background-color: white;
+    box-shadow: 0 2px 25px 0 rgba(110, 130, 208, .18);
+}
+.navbar-brand{
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+}
+.nav-link{
+    color:black;
+    font-weight: 500;
+}
+.d-flex ul{
+    list-style-type: none;
+    padding: 0;
+}
+.account{
+    display: flex;
+}
+form.d-flex{
+    position: relative;
+    top: 10px;
+}
+
+
+
+/* ------------------------------------------ FOOTER CSS ------------------------------------------ */
+
+.footer{
+    background-color: white;
+    text-align: center;
+    padding-block: 10px;
+}
+
+/* ------------------------------------------ RESPONSE MESSAGE CSS ------------------------------------ */
+
+.messagestatus{
+    left: 0;
+    line-height: 50px;
+    margin-top: -100px;
+    margin-left: 350px;
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    width: 50%;
+    border-style: solid;
+    outline: none;
+}
+
+/* ------------------------------------------ AUTHENTICATION CSS ------------------------------------ */
+
+.hero{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(156, 156, 156);
+    position: absolute;
+}
+
+.authentication-form-box{
+    width: 380px;
+    height: 480px;
+    position: relative;
+    margin: 6% auto;
+    background: white;
+    padding: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.authentication-button-box{
+    /* width: 220px; */
+    max-width: fit-content;
+    margin: 35px auto;
+    position: relative;
+    box-shadow: 0 0 20px 9px #5c5c5c1f;
+    border-radius: 10px;
+}
+
+.toggle-btn{
+    padding: 10px 29px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    border-radius: 0px;
+}
+
+#authentication-btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: gray; 
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.login-input-group{
+    top: 158px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.register-input-group{
+    top: 120px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+.login-input-field{
+    width: 100%;
+    padding: 10px 0;
+    margin: 5px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.register-input-field{
+    width: 100%;
+    padding: 8px 0;
+    margin: 4px 0;
+    border-left: 0;
+    border-top: 0;
+    border-right: 0;
+    border-bottom: 1px solid #999;
+    outline: none;
+    background: transparent;
+}
+
+.login-submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.register-submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+    margin-top: 30px;
+}
+
+.login-submit-btn:hover {
+    background-color: #808080; 
+   }
+
+.register-submit-btn:hover {
+    background-color: #808080; 
+   }
+   
+
+#login{
+    left: 50px;
+}
+
+#register{
+    left: 450px;
+}
+
+
+/* --------------------------------- HOME PAGE CSS -------------------------------- */
+
+.body{
+    background-color: #F0F2F5;
+}
+
+/* Left Side Bar */
+.left-side-bar{
+    background-color: white;
+    padding-block: 20px;
+    border-radius: 10px;
+}
+.left-side-bar h4{
+    color: #0674E8;
+    font-weight: bold;
+    text-align: center;
+}
+.left-side-bar ul{
+    list-style-type: none;
+    line-height: 40px;
+}
+.username{
+    font-weight: bold;
+}
+.country-visited{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.round-btn{
+    background-color:  #F0F2F5;
+    border: 1px solid #0674E8;
+}
+
+/* Middle bar */
+.post-div{
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 100%;
+}
+.post-div ul{
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+}
+.post{
+    background-color: #F0F2F5;
+    min-width: 240%;
+    position: relative;
+    top: 5px;
+}
+.btn-primary{
+    min-width: 100%;
+}
+
+.post-box{
+    background-color: white;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 20px;
+}
+.post-box a{
+    font-weight: 500;
+    position: relative;
+    top: -7px;
+    right: 5px;
+}
+.post-box small{
+    position: relative;
+    left: 50px;
+    top: -25px;
+}
+.post-box ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 20px;
+}
+.post-box ul li a{
+    color: initial;
+    text-decoration: none;
+}
+
+/* Right Side */
+.right-side{
+    background-color: white;
+    border-radius: 10px;
+    padding-block: 20px;
+}
+.right-side h4{
+    color: #0674E8;
+    font-weight: bold;
+    text-align: center;
+}
+.right-side ul{
+    list-style-type: none;
+}
+
+
+/* ------------------------------------------ COMPLETE REGISTRATION PAGE CSS ------------------------------------------ */
+
+
+#editcontainer{
+    padding:3.01em 120px 0px 120px;
+    }
+
+    
+.edit-input input[type=text], .edit-input input[type=email], .edit-input input[type=date] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #D0D0D0;
+  }
+  
+  .edit-btn {
+    background-color: #0d6efd;
+    color: white;
+    font-weight: bold;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .editbtn:hover {
+   background-color: #A7B25C; 
+  }
+  
+  .edit-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 70px;
+      
+  }
+  
+
+/* ------------------------------------------ WEATHER PAGE CSS ------------------------------------------ */
+
+
+.weather-hero{
+    height: 100%;
+    width: 100%;
+    background-color: #F0F2F5;
+    position: absolute;
+}
+
+.weather-form-box{
+    width: 412px;
+    height: 416px;
+    position: relative;
+    margin: 6% auto;
+    background-color: rgba(255, 255, 255, 0.818);
+    padding: 5px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.weather-button-box{
+    /* width: 220px; */
+    max-width: fit-content;
+    margin: 35px auto;
+    position: relative;
+    border-radius: 10px;
+}
+
+.toggle-btn{
+    padding: 10px 29px;
+    cursor: pointer;
+    background: transparent;
+    border: 0;
+    outline: none;
+    position: relative;
+    border-radius: 0px;
+}
+
+#weather-btn{
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 110px;
+    height: 100%;
+    background: gray; 
+    border-radius: 10px;
+    transition: .5s;
+}
+
+.weather-input-group{
+    top: 158px;
+    position: absolute;
+    width: 280px;
+    transition: .5s;
+}
+
+
+.weather-input-field{
+    width: 50%;
+    padding: 15px;
+    margin: 45px 100px;
+    border-style: solid;
+    background: transparent;
+    border-radius: 10px;
+}
+
+
+.weather-submit-btn{
+    width: 85%;
+    padding: 10px 30px;
+    cursor: pointer;
+    display: block;
+    margin: auto;
+    border: 0;
+    outline: none;
+    border-radius: 10px;
+    margin-top: 50px;
+    background-color: #0d6efd;
+    color: white;
+}
+
+.weather-submit-btn:hover {
+    background-color: #0d6dfdee;
+   }
+
+
+
+/* ------------------------------------------ DELETE ACCOUNT PAGE CSS ------------------------------------------ */
+
+
+   #deletecontainer{
+    padding:10.0em 120px 0px 120px;
+    }
+
+    
+.delete-input input[type=text] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #D0D0D0;
+  }
+  
+  .delete-btn {
+    background-color: #fe2600;
+    color: white;
+    font-weight: bold;
+    padding: 16px 20px;
+    margin: 170px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .delete-btn:hover {
+   background-color: #ff0000; 
+  }
+  
+  .delete-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 70px;
+      
+  }
+
+
+  /* ------------------------------------------ FIND FRIENDS PAGE CSS ------------------------------------------ */
+
+  .addfriend-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 70px;
+      
+  }
+
+  .addfriend-btn {
+    background-color: #0d6efd;
+    color: white;
+    font-weight: bold;
+    padding: 20px 20px;
+    margin: 86px 332px;
+    border: none;
+    cursor: pointer;
+    width: 50%;
+  }
+
+  
+  .addfriend-input input[type=text] {
+    width: 50%;
+    padding: 19px;
+    margin: 89px 0px 71px 399px;
+    border: ridge;
+    border-radius: 10px;
+    background: #D0D0D0;
+  }
+
+
+  /* ------------------------------------------ TRAVEL PLANNER PAGE CSS ------------------------------------------ */
+
+
+  #travelplancontainer{
+    padding:3.01em 120px 0px 120px;
+    }
+
+    
+.travelplan-input input[type=text], .travelplan-input input[type=date] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #D0D0D0;
+  }
+  
+  .travelplan-btn {
+    background-color: #0d6efd;
+    color: white;
+    font-weight: bold;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+  }
+  
+  .travelplanbtn:hover {
+   background-color: #A7B25C; 
+  }
+  
+  .travelplan-container{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 70px;
+      
+  }
